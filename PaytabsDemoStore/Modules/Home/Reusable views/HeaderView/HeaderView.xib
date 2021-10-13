@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="PaytabsDemoStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-dj-Wxd">
+                    <rect key="frame" x="10" y="35" width="416" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-mJ-C4t">
+                    <rect key="frame" x="341" y="28" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="5BV-SF-hDe"/>
+                        <constraint firstAttribute="height" constant="40" id="w8L-DS-hQn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="More">
+                        <color key="titleColor" red="0.42745098040000001" green="0.80784313730000001" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="03s-Oh-OfZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="SaA-dj-Wxd" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="EJJ-v2-PUf"/>
+                <constraint firstItem="gUY-mJ-C4t" firstAttribute="centerY" secondItem="SaA-dj-Wxd" secondAttribute="centerY" id="gX6-XN-hPD"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="gUY-mJ-C4t" secondAttribute="trailing" constant="5" id="h8C-DN-5Gr"/>
+                <constraint firstItem="SaA-dj-Wxd" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="j93-yg-tJb"/>
+                <constraint firstAttribute="trailing" secondItem="SaA-dj-Wxd" secondAttribute="trailing" id="nAb-4g-oKm"/>
+            </constraints>
+            <connections>
+                <outlet property="moreBtn" destination="gUY-mJ-C4t" id="3vb-P1-oji"/>
+                <outlet property="titleLabel" destination="SaA-dj-Wxd" id="R3j-Tz-Ihp"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="-6.0267857142857144"/>
+        </collectionReusableView>
+    </objects>
+</document>
