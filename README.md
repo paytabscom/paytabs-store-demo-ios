@@ -41,7 +41,7 @@ You need to add in PaymentVM the server and client keys and profileID to run and
 * [API] (https://fakestoreapi.com/)
 * [Design] (https://www.freepik.com/free-vector/purchase-online-onboarding-app_6592141.htm#&position=1)
 
-## PayTabs
+# PayTabs
 
 [Support][1] | [Terms of Use][2] | [Privacy Policy][3]
 
