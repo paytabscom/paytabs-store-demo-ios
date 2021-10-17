@@ -36,7 +36,7 @@ You need to add in PaymentVM the server and client keys and profileID to run and
 
   <img src="https://github.com/mohammed-salah-zidane/TwitterClone/blob/main/blob/modular-arch-diagram.png" height="600">
  
-# Credentials
+# Credits:
 
 * [API] (https://fakestoreapi.com/)
 * [Design] (https://www.freepik.com/free-vector/purchase-online-onboarding-app_6592141.htm#&position=1)
