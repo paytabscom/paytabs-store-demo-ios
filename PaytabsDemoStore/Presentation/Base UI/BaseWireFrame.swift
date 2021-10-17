@@ -99,7 +99,7 @@ extension BaseWireframe {
     static public func make(
         from storyboard: UIStoryboard.StoryboardType,
         with viewModel: T
-    ) -> Self<T> {
+    ) -> Self {
         let view = Self.instantiate(storyboard: storyboard)
         view.viewModel = viewModel
         return view

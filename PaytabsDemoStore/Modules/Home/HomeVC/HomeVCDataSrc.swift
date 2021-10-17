@@ -56,23 +56,6 @@ extension HomeDataSrc: UICollectionViewDataSource {
             return cell
         }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: "header", withReuseIdentifier: "HeaderView", for: indexPath)as? HeaderView else{
-            return UICollectionReusableView()
-        }
-        switch indexPath.section{
-        case 0:
-            view.title = "Women's clothing"
-            view.moreBtn.isHidden = true
-        case 1:
-            view.title = "Featured products"
-            view.moreBtn.isHidden = false
-        default:
-            view.title = ""
-        }
-        return view
-    }
 }
 
 extension HomeDataSrc: UICollectionViewDelegate {
