@@ -2,17 +2,6 @@
 
 Demo Store app represents a demo eCommerce store: it provides an example of how to build a small eCommerce app and integrate with PayTabs online payment gateway, it's a suitable showcase for all the advantages that architecture components bring, has all features that would make it a modular, scalable, testable and maintainable app.
 
-# Implemented Using
-
-* [PayTabsSDK](https://github.com/paytabscom/paytabs-ios-library-sample) 
-* MVVM with RxSwift
-* RxMoya for netwokring
-* Modular Architecture (App, Data, Core, Presentation)
-* Many design patterns (Builder, Factory, Repository, Singletone, Strategy, ...etc)
-* SOLID Principles
-* Storyboards, Nib files, and programmatically for designing the views
-* Realm Database
-
 # Review Demo GIF
  ![Review Demo](preview.gif)
  
@@ -27,6 +16,11 @@ Demo Store app represents a demo eCommerce store: it provides an example of how 
 # Usage
 
 Pull or download the repo after that make the 'pod install' command then you can run.
+
+# Configuration 
+you can configure payment info from settings -> PaytabsDemoStore
+![image](https://user-images.githubusercontent.com/95287975/144080839-a87e9525-49ea-4e0d-af7b-370882e9e437.png)
+
 
 # Note
 You need to add in PaymentVM the server and client keys and profileID to run and see the PayTabs how it works.
