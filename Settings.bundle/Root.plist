@@ -8,23 +8,23 @@
 	<array>
 		<dict>
 			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Country code(ISO Alpha 2)</string>
+			<key>DefaultValue</key>
+			<string>AE</string>
+			<key>Key</key>
+			<string>user_country</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>AED</string>
 			<key>Title</key>
 			<string>Currency</string>
 			<key>Key</key>
 			<string>user_currency</string>
-			<key>DefaultValue</key>
-			<string>USD</string>
-			<key>Values</key>
-			<array>
-				<string>USD</string>
-				<string>UED</string>
-			</array>
-			<key>Titles</key>
-			<array>
-				<string>USD</string>
-				<string>UED</string>
-			</array>
 		</dict>
 		<dict>
 			<key>Type</key>

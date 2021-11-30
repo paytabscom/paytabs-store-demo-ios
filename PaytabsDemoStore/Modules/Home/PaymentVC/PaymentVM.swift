@@ -21,7 +21,9 @@ class PaymentVM: ViewModel {
     var profileID = "*profile id*"
     var serverKey = "*server key*"
     var clientKey = "*client key*"
-    var currency = "USD"
+    var currency = "AED"
+    var countryCode = "AE"
+    
     private var amount: Double = 0
     
     init(dataManager: DataManager) {
@@ -66,7 +68,7 @@ extension PaymentVM {
             clientKey: clientKey,
             currency: currency,
             amount: amount,
-            merchantCountryCode: "AE"
+            merchantCountryCode: countryCode
         )
         .cartDescription("Clothes")
         .cartID("1234")
@@ -92,6 +94,10 @@ extension PaymentVM {
         
         if let localCurrency = UserDefaults.standard.string(forKey: "user_currency") {
             self.currency = localCurrency
+        }
+        
+        if let localCountryCode = UserDefaults.standard.string(forKey: "user_country") {
+            self.countryCode = localCountryCode
         }
     }
 }
