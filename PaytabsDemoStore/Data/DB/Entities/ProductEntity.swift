@@ -34,7 +34,7 @@ class ProductEntityMapper: Mapper {
         entity.descreption = input.welcomeDescription
         entity.created = Date()
         entity.image = input.image
-        entity.price = input.price
+        entity.price = input.itemPrice
         entity.title = input.title
         entity.quantity = input.quantity
         entity.category = input.category

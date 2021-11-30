@@ -24,7 +24,12 @@ class ProfileVC: BaseWireframe<ProfileVM> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerCells()
         setupUI()
+    }
+    
+    private func registerCells() {
+        tableView.register(cell: InfoCell.self)
     }
     
     private lazy var ProfileDataSrc: ProfileDataSrc! = {

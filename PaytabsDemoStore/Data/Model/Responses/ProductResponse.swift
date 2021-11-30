@@ -11,23 +11,27 @@ import Foundation
 struct ProductItem: Codable {
     let id: Int
     let title: String
-    let price: Double
+    let itemPrice: Double
     let welcomeDescription: String
     let category: String
     let image: String
     var quantity = 1
+    lazy var price: Double = {
+        return itemPrice.rounded(toPlaces: 2)
+    }()
 
 
     enum CodingKeys: String, CodingKey {
-        case id, title, price
+        case id, title
         case welcomeDescription = "description"
         case category, image
+        case itemPrice = "price"
     }
     
     init(id: Int, title: String, price: Double, welcomeDescription: String, category: String, image: String, quantity: Int = 1) {
         self.id = id
         self.title = title
-        self.price = price
+        self.itemPrice = price
         self.welcomeDescription = welcomeDescription
         self.category = category
         self.image = image
@@ -68,3 +72,4 @@ enum Count: Codable {
         }
     }
 }
+

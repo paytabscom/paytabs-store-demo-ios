@@ -21,10 +21,10 @@ extension OrdersDataSrc: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath)as? CartCell else {return UITableViewCell()}
         guard let item = viewModel.getProduct(at: indexPath.row) else {return cell}
-        let currentprice = item.price * Double(item.quantity)
+        let currentprice = item.itemPrice * Double(item.quantity)
         cell.titlelbl =  item.title
         cell.pricelbl = currentprice
-        cell.singlePricelbl = item.price
+        cell.singlePricelbl = item.itemPrice
         cell.img = item.image
         cell.count = String(item.quantity)
         cell.id = item.id

@@ -62,6 +62,8 @@
 		A169816426DD137600D466C5 /* WalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169816326DD137600D466C5 /* WalkthroughVC.swift */; };
 		A169819426DD8DB500D466C5 /* WalkthroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169819326DD8DB500D466C5 /* WalkthroughCollectionViewCell.swift */; };
 		A539044D4D1DDD6E6836A679 /* Pods_PaytabsDemoStore_PaytabsDemoStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573A907EA1AF702A7569DAA /* Pods_PaytabsDemoStore_PaytabsDemoStoreUITests.framework */; };
+		CFBD83012756620A00460237 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD82FF2756620A00460237 /* InfoCell.swift */; };
+		CFBD83022756620A00460237 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBD83002756620A00460237 /* InfoCell.xib */; };
 		E14B8300F34372FD7E2C49A3 /* Pods_PaytabsDemoStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0000C52305ECB16FEDE997 /* Pods_PaytabsDemoStoreTests.framework */; };
 		E21DB73026FC44AE005FBE07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DB72F26FC44AE005FBE07 /* ProfileVC.swift */; };
 		E21DB73226FC4599005FBE07 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DB73126FC4599005FBE07 /* ProfileVM.swift */; };
@@ -207,6 +209,8 @@
 		A169819326DD8DB500D466C5 /* WalkthroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCollectionViewCell.swift; sourceTree = "<group>"; };
 		B71CB9C948EB30C2C6E466AB /* Pods-PaytabsDemoStore-PaytabsDemoStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabsDemoStore-PaytabsDemoStoreUITests.release.xcconfig"; path = "Target Support Files/Pods-PaytabsDemoStore-PaytabsDemoStoreUITests/Pods-PaytabsDemoStore-PaytabsDemoStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CC3F981FAC6C13A9C10F176C /* Pods-PaytabsDemoStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabsDemoStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-PaytabsDemoStoreTests/Pods-PaytabsDemoStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFBD82FF2756620A00460237 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		CFBD83002756620A00460237 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		E21DB72F26FC44AE005FBE07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E21DB73126FC4599005FBE07 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		E22C0DF326E64C5D00132556 /* FeaturedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCell.swift; sourceTree = "<group>"; };
@@ -588,6 +592,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		CFBD82FE2756619700460237 /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFBD82FF2756620A00460237 /* InfoCell.swift */,
+				CFBD83002756620A00460237 /* InfoCell.xib */,
+			);
+			path = InfoCell;
+			sourceTree = "<group>";
+		};
 		E21DB72E26FC449D005FBE07 /* ProfileVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +714,7 @@
 		E287B06B26E2869C00DFBDA0 /* Reusable views */ = {
 			isa = PBXGroup;
 			children = (
+				CFBD82FE2756619700460237 /* InfoCell */,
 				E276FD0126FFA5E300A6CD45 /* OrdersCell */,
 				E268D3E626FF86E300136795 /* FavoriteCell */,
 				E28A384C26F644B30098AF18 /* CartCell */,
@@ -897,6 +911,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DD9BA52704892E00B99229 /* CategoriesDetailsCell.xib in Resources */,
+				CFBD83022756620A00460237 /* InfoCell.xib in Resources */,
 				E276FD0726FFA61800A6CD45 /* OrdersCell.xib in Resources */,
 				E2B1FB1A26EEE8A400538236 /* CategoriesCell.xib in Resources */,
 				E22C0DF626E64C5D00132556 /* FeaturedCell.xib in Resources */,
@@ -1082,6 +1097,7 @@
 				60C63B3E26EE1E9000A958EC /* UITableView+Scrolling.swift in Sources */,
 				E2EDFD5326F2653000896AC3 /* CartVCDataSrc.swift in Sources */,
 				E276FCFE26FF9C4700A6CD45 /* OrdersVM.swift in Sources */,
+				CFBD83012756620A00460237 /* InfoCell.swift in Sources */,
 				E26ECF7626EE214A002D98B9 /* ZoomHelper.swift in Sources */,
 				60C63B3D26EE1E9000A958EC /* UIView+Gestures.swift in Sources */,
 				60C63B4F26EE322200A958EC /* HomeVCDataSrc.swift in Sources */,

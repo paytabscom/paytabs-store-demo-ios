@@ -40,7 +40,7 @@ extension HomeDataSrc: UICollectionViewDataSource {
             }
             cell.titlelbl = product.title
             cell.img = product.image
-            cell.pricelbl = "$\(String(product.price))"
+            cell.pricelbl = "$\(String(product.itemPrice))"
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)as? FeaturedCell else { return UICollectionViewCell() }
@@ -48,7 +48,7 @@ extension HomeDataSrc: UICollectionViewDataSource {
                 return cell
             }
             cell.titlelbl = product.title
-            cell.pricelbl = "$\(String(product.price))"
+            cell.pricelbl = "$\(String(product.itemPrice))"
             cell.img = product.image
             return cell
         default:
