@@ -64,6 +64,7 @@
 		A539044D4D1DDD6E6836A679 /* Pods_PaytabsDemoStore_PaytabsDemoStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573A907EA1AF702A7569DAA /* Pods_PaytabsDemoStore_PaytabsDemoStoreUITests.framework */; };
 		CFBD83012756620A00460237 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD82FF2756620A00460237 /* InfoCell.swift */; };
 		CFBD83022756620A00460237 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBD83002756620A00460237 /* InfoCell.xib */; };
+		CFBD83052756704200460237 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFBD83042756704200460237 /* Settings.bundle */; };
 		E14B8300F34372FD7E2C49A3 /* Pods_PaytabsDemoStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0000C52305ECB16FEDE997 /* Pods_PaytabsDemoStoreTests.framework */; };
 		E21DB73026FC44AE005FBE07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DB72F26FC44AE005FBE07 /* ProfileVC.swift */; };
 		E21DB73226FC4599005FBE07 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DB73126FC4599005FBE07 /* ProfileVM.swift */; };
@@ -211,6 +212,7 @@
 		CC3F981FAC6C13A9C10F176C /* Pods-PaytabsDemoStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabsDemoStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-PaytabsDemoStoreTests/Pods-PaytabsDemoStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFBD82FF2756620A00460237 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		CFBD83002756620A00460237 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		CFBD83042756704200460237 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E21DB72F26FC44AE005FBE07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E21DB73126FC4599005FBE07 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		E22C0DF326E64C5D00132556 /* FeaturedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCell.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 		A161321D26DBA9F8009B9EBB = {
 			isa = PBXGroup;
 			children = (
+				CFBD83042756704200460237 /* Settings.bundle */,
 				A161322826DBA9F8009B9EBB /* PaytabsDemoStore */,
 				A161323F26DBA9FD009B9EBB /* PaytabsDemoStoreTests */,
 				A161324A26DBA9FD009B9EBB /* PaytabsDemoStoreUITests */,
@@ -912,6 +915,7 @@
 			files = (
 				E2DD9BA52704892E00B99229 /* CategoriesDetailsCell.xib in Resources */,
 				CFBD83022756620A00460237 /* InfoCell.xib in Resources */,
+				CFBD83052756704200460237 /* Settings.bundle in Resources */,
 				E276FD0726FFA61800A6CD45 /* OrdersCell.xib in Resources */,
 				E2B1FB1A26EEE8A400538236 /* CategoriesCell.xib in Resources */,
 				E22C0DF626E64C5D00132556 /* FeaturedCell.xib in Resources */,
