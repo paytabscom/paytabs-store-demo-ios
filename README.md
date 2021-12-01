@@ -19,7 +19,7 @@ Pull or download the repo after that make the 'pod install' command then you can
 
 # Configuration 
 you can configure payment info from settings -> PaytabsDemoStore
-![image](https://user-images.githubusercontent.com/95287975/144080839-a87e9525-49ea-4e0d-af7b-370882e9e437.png)
+![image](https://user-images.githubusercontent.com/95287975/144201703-12f6fd9d-1c43-4243-a1f4-90129e088fdc.png)
 
 
 # Note
