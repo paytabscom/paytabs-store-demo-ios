@@ -18,13 +18,17 @@ class PaymentVM: ViewModel {
     var dataManager: DataManager
     var disposeBag: DisposeBag = .init()
     var refreshView = PublishSubject<Bool>()
-    let profileID = "*profile id*"
-    let serverKey = "*server key*"
-    let clientKey = "*client key*"
+    var profileID = "*profile id*"
+    var serverKey = "*server key*"
+    var clientKey = "*client key*"
+    var currency = "AED"
+    var countryCode = "AE"
+    
     private var amount: Double = 0
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
+        getLocalConfiguration()
     }
     
 }
@@ -62,9 +66,9 @@ extension PaymentVM {
             profileID: profileID,
             serverKey: serverKey,
             clientKey: clientKey,
-            currency: "USD",
+            currency: currency,
             amount: amount,
-            merchantCountryCode: "AE"
+            merchantCountryCode: countryCode
         )
         .cartDescription("Clothes")
         .cartID("1234")
@@ -74,6 +78,27 @@ extension PaymentVM {
         .billingDetails(billingDetails)
         .shippingDetails(shippingDetails)
         .theme(theme)
+    }
+    
+    private func getLocalConfiguration() {
+        UserDefaults.standard.register(defaults: [String: Any]())
+        if let localClientKey = UserDefaults.standard.string(forKey: "client_key") {
+            self.clientKey = localClientKey
+        }
+        if let localServerKey = UserDefaults.standard.string(forKey: "server_key") {
+            self.serverKey = localServerKey
+        }
+        if let localProfileId = UserDefaults.standard.string(forKey: "profile_id") {
+            self.profileID = localProfileId
+        }
+        
+        if let localCurrency = UserDefaults.standard.string(forKey: "user_currency") {
+            self.currency = localCurrency
+        }
+        
+        if let localCountryCode = UserDefaults.standard.string(forKey: "user_country") {
+            self.countryCode = localCountryCode
+        }
     }
 }
 

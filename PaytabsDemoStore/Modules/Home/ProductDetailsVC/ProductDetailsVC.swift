@@ -41,7 +41,7 @@ class ProductDetailsVC: BaseWireframe<ProductDetailsVM> {
     func assignProduct(){
         detailedLabel.text = viewModel.product?.welcomeDescription
         productTitle.text = viewModel.product?.title
-        productPrice.text = String(format: "$%f", viewModel.product?.price ?? 0)
+        productPrice.text = "\(viewModel.product?.itemPrice ?? 0) $"
         productImage.kf.indicatorType = .activity
         productImage.kf.setImage(with: URL(string: viewModel.product?.image ?? ""))
     }

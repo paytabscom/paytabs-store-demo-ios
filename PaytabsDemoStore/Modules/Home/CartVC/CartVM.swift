@@ -39,8 +39,9 @@ extension CartVM {
     }
     
     func calculateTotalPrice() {
+        totalPrice = 0
         itemsList.forEach { item in
-            totalPrice += item.price * Double(item.quantity)
+            totalPrice += item.itemPrice * Double(item.quantity)
         }
     }
     

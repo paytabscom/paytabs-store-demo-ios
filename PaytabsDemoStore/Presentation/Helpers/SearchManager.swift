@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public protocol SearchManagerDelegate:class{
+public protocol SearchManagerDelegate: class{
     func search(with searchTerm:String)
     func searchBarDidDismissed()
     func searchBarBeginEditing()

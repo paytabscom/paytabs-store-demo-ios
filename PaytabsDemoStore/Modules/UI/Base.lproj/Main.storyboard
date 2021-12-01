@@ -232,7 +232,7 @@
                                             <constraint firstItem="sxT-m0-hFT" firstAttribute="height" secondItem="2dE-tI-OWa" secondAttribute="height" id="RhZ-xO-zrQ"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="8iF-mw-U8r">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8iF-mw-U8r">
                                         <rect key="frame" x="25" y="30" width="364" height="32"/>
                                         <subviews>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o81-fa-YbH">
@@ -242,7 +242,7 @@
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b38-5p-sAu">
-                                                <rect key="frame" x="171" y="0.0" width="108.5" height="32"/>
+                                                <rect key="frame" x="104" y="0.0" width="242.5" height="32"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -321,7 +321,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-uJ-hZI">
-                                        <rect key="frame" x="15" y="450" width="384" height="0.0"/>
+                                        <rect key="frame" x="15" y="470" width="384" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -330,7 +330,7 @@
                                 <constraints>
                                     <constraint firstItem="g4y-vg-D7c" firstAttribute="width" secondItem="3os-Jx-NYb" secondAttribute="width" id="BMG-75-gs5"/>
                                     <constraint firstItem="g4y-vg-D7c" firstAttribute="leading" secondItem="3os-Jx-NYb" secondAttribute="leading" id="Dqf-qb-cHh"/>
-                                    <constraint firstItem="6ob-uJ-hZI" firstAttribute="top" secondItem="g4y-vg-D7c" secondAttribute="bottom" id="FGs-Dq-hmw"/>
+                                    <constraint firstItem="6ob-uJ-hZI" firstAttribute="top" secondItem="g4y-vg-D7c" secondAttribute="bottom" constant="20" id="FGs-Dq-hmw"/>
                                     <constraint firstItem="g4y-vg-D7c" firstAttribute="top" secondItem="3os-Jx-NYb" secondAttribute="top" id="Ibk-Jw-9R1"/>
                                     <constraint firstItem="6ob-uJ-hZI" firstAttribute="leading" secondItem="3os-Jx-NYb" secondAttribute="leading" constant="15" id="P3L-A3-hh4"/>
                                     <constraint firstAttribute="trailing" secondItem="6ob-uJ-hZI" secondAttribute="trailing" constant="15" id="Rja-uB-m9x"/>

@@ -20,11 +20,10 @@ extension ProfileDataSrc: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)as? InfoCell else {return UITableViewCell()}
         
-        cell.textLabel?.text = viewModel.profileList[indexPath.row]
-        cell.imageView?.image = viewModel.profileImages[indexPath.row]
-        cell.imageView?.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        cell.itemLabel?.text = viewModel.profileList[indexPath.row]
+        cell.itemImage?.image = viewModel.profileImages[indexPath.row]
         return cell
         
     }

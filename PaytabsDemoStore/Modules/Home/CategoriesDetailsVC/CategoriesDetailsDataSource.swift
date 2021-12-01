@@ -25,7 +25,7 @@ extension CategoriesDetailsDataSrc: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesDetailsCell", for: indexPath)as? CategoriesDetailsCell else { return UITableViewCell() }
         guard let item = viewModel.getProduct(at: indexPath.row) else {return cell}
         cell.titlelbl =  item.title
-        cell.pricelbl = "$\(item.price)"
+        cell.pricelbl = "$\(item.itemPrice)"
         cell.img = item.image
         return cell
 
