@@ -714,7 +714,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBar" id="M7R-oN-aXt" customClass="MainTabBar" customModule="PaytabsDemoStore" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sh6-qK-4tl"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="McK-Pw-lND">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="McK-Pw-lND">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
